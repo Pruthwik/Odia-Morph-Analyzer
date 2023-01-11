@@ -1,4 +1,4 @@
-"""Remove duplicates and save."""
+"""Convert ."""
 import os
 from argparse import ArgumentParser
 from re import search
@@ -7,6 +7,9 @@ from re import findall
 from re import finditer
 
 
+# Odia vowels
+odia_vowels = ['a', 'A', 'i', 'I', 'e', 'E', 'o', 'O']
+# wx->utf and utf->wx converters for Odia
 conv_u2w = WXC(order='utf2wx', lang='ori')
 conv_w2u = WXC(order='wx2utf', lang='ori')
 odia_numbers = '[\U00000B66-\U00000B6F]+'
@@ -145,6 +148,7 @@ def find_morph_for_missing_word(token, token_wx, pos, lcat, next_token):
                     person = '3'
                 else:
                     root_utf = token
+                    root_wx = token_wx
                     gender, number, person = 'any', 'any', 'any'
                     if next_token in ['ସହିତ', 'ଦ୍ଵାରା', 'ଠାରେ', 'ପାଇଁ']:
                         case = 'o'
@@ -160,12 +164,16 @@ def find_morph_for_missing_word(token, token_wx, pos, lcat, next_token):
                             tam, suff = '', ''
     else:
         root_utf = token
+        root_wx = token_wx
         gender, number, person = '', '', ''
         if next_token in ['ସହିତ', 'ଦ୍ଵାରା', 'ଠାରେ', 'ପାଇଁ']:
             case = 'o'
         else:
             case = ''
         tam, suff = '', ''
+    if root_wx[-1] not in odia_vowels:
+        root_wx = root_wx + 'a'
+        root_utf = conv_w2u.convert(root_wx)
     token_morph = "fs af='" + ','.join([root_utf, lcat, gender, number, person, case, tam, suff]) + "'>"
     return token_morph
 
@@ -199,6 +207,7 @@ def run_lt_toolbox_and_convert_into_appropriate_form(lines, morph_dict_path, chu
             else:
                 os.system("echo " + token_wx + " | lt-proc " + morph_dict_path + " > temp.txt")
                 token_morph = read_lines_from_file_without_blanks("temp.txt")[0]
+                os.system("rm -rf temp.txt")
                 if not findall('<.*?>', token_morph):
                     token_morph = ''
                 else:
@@ -213,7 +222,11 @@ def run_lt_toolbox_and_convert_into_appropriate_form(lines, morph_dict_path, chu
                         token_morph_in_non_af_form.append(token_morph[morphs[-1].end(): -1])
                     for token_info in token_morph_in_non_af_form:
                         root_wx = token_info[: token_info.find('<')]
-                        root = conv_w2u.convert(root_wx)
+                        if root_wx[-1] not in odia_vowels:
+                            root_wx = root_wx + 'a'
+                            root = conv_w2u.convert(root_wx)
+                        else:
+                            root = conv_w2u.convert(root_wx)
                         lcat_info = search('\<cat\:(.*?)\>', token_info).group(1)
                         lcat_info = convert_lexical_category_into_af_form(lcat_info)
                         if lcat != lcat_info:
