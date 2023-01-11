@@ -1,0 +1,32 @@
+<Sentence id='1'>
+1	ବାମହାତି	JJ	fs af='ବାମହାତି,adj,,,,,,'>
+2	ନାଡାଲ୍‌	N_NNP	fs af='ନାଡାଲ୍‌,n,any,any,any,d,0,0'>
+3	୧୪	QT_QTC	<fs af='୧୪,num,,,,,,'>
+4	ଥର	QT_QTC	<fs af='ଥର,num,,,,,,'>
+5	ଫ୍ରେଞ୍ଚ୍‌	N_NNP	fs af='ଫ୍ରେଞ୍ଚ୍‌,n,any,any,any,d,0,0'>
+6	ଓପନ୍‌ରେ	N_NNP	fs af='ଓପନ୍,n,any,sg,3,o,ରେ,re'>
+7	ପୁରୁଷ	JJ	<fs af='ପୁରୁଷ,n,any,sg,,,0,0'>
+8	ସିଙ୍ଗଲ୍‌ସ	N_NN	fs af='ସିଙ୍ଗଲ୍‌ସ,n,any,any,any,d,0,0'>
+9	ଜିତିବା	V_VM_VNF	<fs af='ଜିତ୍,v,any,sg,2h,,ବ,ba'>|<fs af='ଜିତ୍,v,any,sg,3,,ବ,ba'>|<fs af='ଜିତ୍,v,any,pl,2h,,ବ,ba'>
+10	ସହ	PSP	<fs af='ସହ,psp,,,,,,'>
+11	୨୨ତମ	QT_QTO	<fs af='୨୨ତମ,num,,,,,,'>
+12	ଗ୍ରାଣ୍ଡସ୍ଲାମ୍	N_NNP	fs af='ଗ୍ରାଣ୍ଡସ୍ଲାମ୍,n,any,any,any,d,0,0'>
+13	ଟାଇଟଲକୁ	N_NN	fs af='ଟାଇଟଲ,n,any,sg,3,o,କୁ,ku'>
+14	ମଧ୍ୟ	PSP	fs af='ମଧ୍ୟ,psp,,,,,,'>
+15	ଜିତିଛନ୍ତି	V_VM_VF	<fs af='ଜିତ୍,v,any,sg,2h,,ଇଛି,iCi'>|<fs af='ଜିତ୍,v,any,sg,3,,ଇଛି,iCi'>|<fs af='ଜିତ୍,v,any,pl,3,,ଇଛି,iCi'>
+16	।	RD_PUNC	<fs af='।,punc,,,,,,'>
+</Sentence>
+
+<Sentence id='2'>
+1	ଫାଇନାଲରେ	N_NN	fs af='ଫାଇନାଲ,n,any,sg,3,o,ରେ,re'>
+2	ନାଡାଲ୍‌	N_NNP	fs af='ନାଡାଲ୍‌,n,any,any,any,d,0,0'>
+3	ସହଜରେ	RB	fs af='ସହଜରେ,adv,,,,,,'>
+4	୮ମ	QT_QTO	<fs af='୮ମ,num,,,,,,'>
+5	ସିଡ୍‌	N_NN	fs af='ସିଡ୍‌,n,any,any,any,d,0,0'>
+6	ନରୱେର	N_NNP	fs af='ନରେ,n,any,sg,3,o,ର,ra'>
+7	କାସ୍ପର	N_NNP	fs af='କାସ୍ପ,n,any,sg,3,o,ର,ra'>
+8	ରୁଡ୍‌ଙ୍କୁ	N_NNP	fs af='ରୁଡ୍,n,any,sg,3,o,ଙ୍କୁ,fku'>
+9	ପରାସ୍ତ	N_NN	fs af='ପରାସ୍ତ,n,any,any,any,d,0,0'>
+10	କରିଥିଲେ	V_VM_VF	<fs af='କର୍,v,any,sg,2h,,ଇଥିଲା,iWilA'>|<fs af='କର୍,v,any,sg,3,,ଇଥିଲା,iWilA'>|<fs af='କର୍,v,any,pl,3,,ଇଥିଲା,iWilA'>
+11	।	RD_PUNC	<fs af='।,punc,,,,,,'>
+</Sentence>

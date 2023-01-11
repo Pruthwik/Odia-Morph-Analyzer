@@ -1,0 +1,94 @@
+<Sentence id='1'>
+1	((	NP
+1.1	ଗଞ୍ଜାମ	N_NNP	fs af='ଗଞ୍ଜାମ,n,any,any,any,d,0,0'>
+	))
+2	((	CCP
+2.1	ତଥା	CC_CCD	fs af='ତଥା,avy,,,,,,'>
+	))
+3	((	NP
+3.1	ଓଡ଼ିଶାର	N_NNP	fs af='ଓଡ଼ିଶା,n,any,sg,3,o,ର,ra'>
+	))
+4	((	NP
+4.1	ପ୍ରସିଦ୍ଧ	JJ	fs af='ପ୍ରସିଦ୍ଧ,adj,,,,,,'>
+4.2	ଶକ୍ତିପୀଠ	N_NN	fs af='ଶକ୍ତିପୀଠ,n,any,any,any,d,0,0'>
+	))
+5	((	NP
+5.1	ମା	N_NNP	fs af='ମା,n,any,any,any,d,0,0'>
+5.2	'	RD_PUNC	<fs af='',punc,,,,,,'>
+	))
+6	((	NP
+6.1	ତାରାତାରିଣୀଙ୍କ	N_NNP	fs af='ତାରାତାରିଣୀ,n,any,sg,3,o,ଙ୍କ,fka'>
+6.2	ନୂତନ	JJ	<fs af='ନୂତନ,adj,any,sg,,,,'>
+6.3	ମନ୍ଦିର	N_NN	<fs af='ମନ୍ଦିର,n,any,sg,,,0,0'>
+	))
+7	((	NP
+7.1	ପ୍ରତିଷ୍ଠା	N_NN	fs af='ପ୍ରତିଷ୍ଠା,n,any,any,any,d,0,0'>
+	))
+8	((	NP
+8.1	ଉତ୍ସବରେ	N_NN	<fs af='ଉତ୍ସବ,n,any,sg,,,ରେ,re'>
+	))
+9	((	NP
+9.1	ମୁଖ୍ୟମନ୍ତ୍ରୀ	N_NN	fs af='ମୁଖ୍ୟମନ୍ତ୍ରୀ,n,any,any,any,d,0,0'>
+	))
+10	((	NP
+10.1	ଶ୍ରୀନବୀନ	N_NNP	fs af='ଶ୍ରୀନବୀନ,n,any,any,any,d,0,0'>
+10.2	ପଟ୍ଟନାୟକ	N_NNP	fs af='ପଟ୍ଟନାୟକ,n,any,any,any,d,0,0'>
+	))
+11	((	VGNN
+11.1	ଯୋଗଦେବାକୁ	V_VM_VNF	fs af='ଯୋଗଦେବା,v,any,any,any,o,କୁ,ku'>
+	))
+12	((	VGF
+12.1	ଯାଉଛନ୍ତି	V_VM_VF	<fs af='ଯା,v,any,sg,2h,,ଉଛି,uCi'>|<fs af='ଯା,v,any,sg,3,,ଉଛି,uCi'>|<fs af='ଯା,v,any,pl,3,,ଉଛି,uCi'>
+	))
+13	((	BLK
+13.1	।	RD_PUNC	<fs af='।,punc,,,,,,'>
+	))
+</Sentence>
+
+<Sentence id='2'>
+1	((	NP
+1.1	ଗଞ୍ଜାମ	N_NNP	fs af='ଗଞ୍ଜାମ,n,any,any,any,d,0,0'>
+	))
+2	((	CCP
+2.1	ତଥା	CC_CCD	fs af='ତଥା,avy,,,,,,'>
+	))
+3	((	NP
+3.1	ଓଡ଼ିଶାର	N_NNP	fs af='ଓଡ଼ିଶା,n,any,sg,3,o,ର,ra'>
+	))
+4	((	NP
+4.1	ପ୍ରସିଦ୍ଧ	JJ	fs af='ପ୍ରସିଦ୍ଧ,adj,,,,,,'>
+4.2	ଶକ୍ତିପୀଠ	N_NN	fs af='ଶକ୍ତିପୀଠ,n,any,any,any,d,0,0'>
+	))
+5	((	NP
+5.1	ମା	N_NNP	fs af='ମା,n,any,any,any,d,0,0'>
+5.2	'	RD_PUNC	<fs af='',punc,,,,,,'>
+	))
+6	((	NP
+6.1	ତାରାତାରିଣୀଙ୍କ	N_NNP	fs af='ତାରାତାରିଣୀ,n,any,sg,3,o,ଙ୍କ,fka'>
+6.2	ନୂତନ	JJ	<fs af='ନୂତନ,adj,any,sg,,,,'>
+6.3	ମନ୍ଦିର	N_NN	<fs af='ମନ୍ଦିର,n,any,sg,,,0,0'>
+	))
+7	((	NP
+7.1	ପ୍ରତିଷ୍ଠା	N_NN	fs af='ପ୍ରତିଷ୍ଠା,n,any,any,any,d,0,0'>
+	))
+8	((	NP
+8.1	ଉତ୍ସବରେ	N_NN	<fs af='ଉତ୍ସବ,n,any,sg,,,ରେ,re'>
+	))
+9	((	NP
+9.1	ମୁଖ୍ୟମନ୍ତ୍ରୀ	N_NN	fs af='ମୁଖ୍ୟମନ୍ତ୍ରୀ,n,any,any,any,d,0,0'>
+	))
+10	((	NP
+10.1	ଶ୍ରୀନବୀନ	N_NNP	fs af='ଶ୍ରୀନବୀନ,n,any,any,any,d,0,0'>
+10.2	ପଟ୍ଟନାୟକ	N_NNP	fs af='ପଟ୍ଟନାୟକ,n,any,any,any,d,0,0'>
+	))
+11	((	VGNN
+11.1	ଯୋଗଦେବାକୁ	V_VM_VNF	fs af='ଯୋଗଦେବା,v,any,any,any,o,କୁ,ku'>
+	))
+12	((	VGF
+12.1	ଯାଉଛନ୍ତି	V_VM_VF	<fs af='ଯା,v,any,sg,2h,,ଉଛି,uCi'>|<fs af='ଯା,v,any,sg,3,,ଉଛି,uCi'>|<fs af='ଯା,v,any,pl,3,,ଉଛି,uCi'>
+	))
+13	((	BLK
+13.1	।	RD_PUNC	<fs af='।,punc,,,,,,'>
+	))
+</Sentence>
+

@@ -1,0 +1,32 @@
+<Sentence id='1'>
+1	ବାମହାତି	JJ	
+2	ନାଡାଲ୍‌	N_NNP	
+3	୧୪	QT_QTC	
+4	ଥର	QT_QTC	
+5	ଫ୍ରେଞ୍ଚ୍‌	N_NNP	
+6	ଓପନ୍‌ରେ	N_NNP	
+7	ପୁରୁଷ	JJ	
+8	ସିଙ୍ଗଲ୍‌ସ	N_NN	
+9	ଜିତିବା	V_VM_VNF	
+10	ସହ	PSP	
+11	୨୨ତମ	QT_QTO	
+12	ଗ୍ରାଣ୍ଡସ୍ଲାମ୍	N_NNP	
+13	ଟାଇଟଲକୁ	N_NN	
+14	ମଧ୍ୟ	PSP	
+15	ଜିତିଛନ୍ତି	V_VM_VF	
+16	।	RD_SYM	
+</Sentence>
+
+<Sentence id='2'>
+1	ଫାଇନାଲରେ	N_NN	
+2	ନାଡାଲ୍‌	N_NNP	
+3	ସହଜରେ	RB	
+4	୮ମ	QT_QTO	
+5	ସିଡ୍‌	N_NN	
+6	ନରୱେର	N_NNP	
+7	କାସ୍ପର	N_NNP	
+8	ରୁଡ୍‌ଙ୍କୁ	N_NNP	
+9	ପରାସ୍ତ	N_NN	
+10	କରିଥିଲେ	V_VM_VF	
+11	।	RD_SYM	
+</Sentence>
