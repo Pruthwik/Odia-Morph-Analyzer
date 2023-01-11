@@ -7,7 +7,7 @@ lt-comp Odia_apertium_morph_dict.dix Odia_apertium_morph_dict.bin
 ## This code runs both at file or folder level, both on POS or chunk annotated file.
 ## if you are running the following program at only pos annotated data, set chunk value as 0
 ## if you are running the following program at only pos annotated data, set chunk value as 1
-python convert_into_appropriate_morph_after_lt_toolbox.py --input Sample-Input/ --output Sample-Output --dict Odia_apertium_morph_dict.bin --chunk 1
+python odia_morph_analysis_using_lt_toolbox.py --input Sample-Input/ --output Sample-Output --dict Odia_apertium_morph_dict.bin --chunk 1
 ### Arguments for running the program
 #### input: Input folder or file
 #### output: Output folder or file
