@@ -110,6 +110,7 @@ def find_morph_for_missing_word(token, token_wx, pos, lcat, next_token):
         found_vibhakti_plural = search(plural_vibhakti_markers_at_end, token_wx)
         if found_vibhakti_plural:
             case = 'o'
+            gender = 'any'
             number = 'pl'
             person = '3'
             found_vibhakti_singular = search(singular_vibhakti_markers_at_end, token_wx)
@@ -227,9 +228,13 @@ def run_lt_toolbox_and_convert_into_appropriate_form(lines, morph_dict_path, chu
                             root = conv_w2u.convert(root_wx)
                         else:
                             root = conv_w2u.convert(root_wx)
-                        lcat_info = search('\<cat\:(.*?)\>', token_info).group(1)
-                        lcat_info = convert_lexical_category_into_af_form(lcat_info)
-                        if lcat != lcat_info:
+                        lcat_info = search('\<cat\:(.*?)\>', token_info)
+                        if lcat_info:
+                            lcat_info = lcat_info.group(1)
+                            lcat_info = convert_lexical_category_into_af_form(lcat_info)
+                        else:
+                            lcat_info = ''
+                        if lcat_info and lcat != lcat_info:
                             lcat = lcat_info
                         gender = search('\<gen\:(.*?)\>', token_info)
                         if gender:
@@ -282,7 +287,7 @@ def run_lt_toolbox_and_convert_into_appropriate_form(lines, morph_dict_path, chu
                         neg = search('\<neg\:(.*?)\>', token_info)
                         if neg:
                             neg_val = neg.group(1)
-                            fs_value = "<fs af='" + fs_morph + "' " + "neg='" + neg + "'>"
+                            fs_value = "<fs af='" + fs_morph + "' " + "neg='" + neg_val + "'>"
                         else:
                             fs_value = "<fs af='" + fs_morph + "'>"
                         fs_lists.append(fs_value)
