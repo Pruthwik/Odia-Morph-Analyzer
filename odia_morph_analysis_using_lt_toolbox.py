@@ -172,10 +172,10 @@ def find_morph_for_missing_word(token, token_wx, pos, lcat, next_token):
         else:
             case = ''
         tam, suff = '', ''
-    if root_wx[-1] not in odia_vowels:
+    if root_wx and root_wx[-1] not in odia_vowels:
         root_wx = root_wx + 'a'
-        root_utf = conv_w2u.convert(root_wx)
-    token_morph = "fs af='" + ','.join([root_utf, lcat, gender, number, person, case, tam, suff]) + "'>"
+    root_utf = conv_w2u.convert(root_wx)
+    token_morph = "<fs af='" + ','.join([root_utf, lcat, gender, number, person, case, tam, suff]) + "'>"
     return token_morph
 
 
@@ -190,7 +190,11 @@ def run_lt_toolbox_and_convert_into_appropriate_form(lines, morph_dict_path, chu
         line = line.strip()
         if search(pattern, line):
             token_morph = ''
-            addr, token, pos = line.strip().split('\t')
+            if len(line.split('\t')) >= 3:
+                addr, token, pos = line.split('\t')[: 3]
+            else:
+                addr, token = line.split('\t')
+                pos = 'RD_UNK'
             lcat = map_bis_to_lcat(pos)
             token_wx = conv_u2w.convert(token)
             if token not in [',', '/'] and pos in ['RD_SYM', 'RD_PUNC']:
@@ -223,11 +227,9 @@ def run_lt_toolbox_and_convert_into_appropriate_form(lines, morph_dict_path, chu
                         token_morph_in_non_af_form.append(token_morph[morphs[-1].end(): -1])
                     for token_info in token_morph_in_non_af_form:
                         root_wx = token_info[: token_info.find('<')]
-                        if root_wx[-1] not in odia_vowels:
+                        if root_wx and root_wx[-1] not in odia_vowels:
                             root_wx = root_wx + 'a'
-                            root = conv_w2u.convert(root_wx)
-                        else:
-                            root = conv_w2u.convert(root_wx)
+                        root = conv_w2u.convert(root_wx)
                         lcat_info = search('\<cat\:(.*?)\>', token_info)
                         if lcat_info:
                             lcat_info = lcat_info.group(1)
