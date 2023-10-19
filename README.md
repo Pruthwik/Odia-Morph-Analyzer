@@ -1,5 +1,5 @@
 # This python program needs LTTOOLBOX. If you do not have it, install it using the below instructions.
-curl -sS https://apertium.projectjj.com/apt/install-nightly.sh | sudo bash
+curl -sS https://apertium.projectjj.com/apt/install-nightly.sh | sudo bash  
 sudo apt -f install apertium-all-dev
 ## To convert the .dix file into bin format using lt-comp
 lt-comp Odia_apertium_morph_dict.dix Odia_apertium_morph_dict.bin
